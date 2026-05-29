@@ -20,7 +20,7 @@
   --white: #ffffff;
   --accent: #c0c0c0;
   --accent-hover: #e0e0e0;
-  --font: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font: 'Inter', 'Helvetica Neue', Arial, sans-serif;
   --radius: 6px;
   --shadow: 0 2px 12px rgba(0,0,0,.3);
   --shadow-lg: 0 8px 30px rgba(0,0,0,.5);
