@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request a Quote — Apex Freight Solutions</title>
+  <meta name="description" content="Get a free freight quote from Apex Freight Solutions. Fill out our form and we'll get back to you within 24 hours.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">&#9654;</span> Apex Freight
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="contact.html" class="btn btn-nav active">Get a Quote</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Contact Hero -->
+  <header class="page-hero">
+    <div class="container">
+      <h1>Request a Quote</h1>
+      <p>Tell us about your shipment and we'll get back to you within 24 hours.</p>
+    </div>
+  </header>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section">
+    <div class="container contact-grid">
+
+      <form
+        id="quote-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+        class="quote-form"
+      >
+        <!-- Hidden field for Formspree email subject -->
+        <input type="hidden" name="_subject" value="New Quote Request — Apex Freight Website">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="company" placeholder="Acme Corp">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="(555) 123-4567">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="service">Service Needed *</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="Full Truckload (FTL)">Full Truckload (FTL)</option>
+            <option value="Less Than Truckload (LTL)">Less Than Truckload (LTL)</option>
+            <option value="Warehousing & Distribution">Warehousing &amp; Distribution</option>
+            <option value="Freight Brokerage">Freight Brokerage</option>
+            <option value="Expedited Shipping">Expedited Shipping</option>
+            <option value="Dedicated Fleet">Dedicated Fleet</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="origin">Origin City / Zip</label>
+            <input type="text" id="origin" name="origin" placeholder="Houston, TX 77001">
+          </div>
+          <div class="form-group">
+            <label for="destination">Destination City / Zip</label>
+            <input type="text" id="destination" name="destination" placeholder="Dallas, TX 75201">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="details">Shipment Details</label>
+          <textarea id="details" name="details" rows="5" placeholder="Describe your freight: weight, dimensions, special handling, preferred dates, etc."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Quote Request</button>
+
+        <!-- Status messages -->
+        <div id="form-status" class="form-status" aria-live="polite"></div>
+      </form>
+
+      <!-- Sidebar -->
+      <aside class="contact-sidebar">
+        <div class="sidebar-card">
+          <h3>Contact Info</h3>
+          <ul>
+            <li>&#128222; <strong>Phone:</strong> (555) 123-4567</li>
+            <li>&#9993; <strong>Email:</strong> info@apexfreight.com</li>
+            <li>&#128205; <strong>Address:</strong> 1234 Industrial Blvd, Houston, TX 77001</li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h3>Business Hours</h3>
+          <ul>
+            <li><strong>Dispatch:</strong> 24/7</li>
+            <li><strong>Office:</strong> Mon–Fri, 8AM–6PM CST</li>
+            <li><strong>Sat:</strong> 9AM–1PM CST</li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h3>Quick Response</h3>
+          <p>Most quote requests are answered within <strong>2–4 business hours</strong> during office hours.</p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h4><span class="logo-icon">&#9654;</span> Apex Freight</h4>
+        <p>Your trusted partner in logistics and transportation since 2010.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>&#128222; (555) 123-4567</li>
+          <li>&#9993; info@apexfreight.com</li>
+          <li>&#128205; 1234 Industrial Blvd, Houston, TX 77001</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Apex Freight Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
